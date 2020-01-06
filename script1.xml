@@ -1,14 +1,18 @@
 <context>
 
-  <input pattern = "(hello|hi) *">
-  <output value = "Hey Qween $Username!"/>
+  <input pattern ="(hello|hi) *">
+  <output value ="Hey Qween $Username!"/>
     <context if="empty($Username!)" >
-      <output value="Hi squirrel friend! What did your drag mamma name you when you came out of her vagina?"/>
-      <input pattern="$Text">
+    <output value="Hi squirrel friend! What did your drag mamma name you when you came out of her vagina?"/>
+    <input pattern="$Text">
         <var name="UserName" value="$Text" scope="user"/>
         <output value="Nice to meet you $UserName!"/>
-      </input>
+    </input>
 
     </context>
+  </input>
+  
+  <input pattern="How do I look today?">
+    <output value="No T no shade mama, but your hairline is BUSTED"/>
   </input>
 </context>
